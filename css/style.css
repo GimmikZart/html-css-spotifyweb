@@ -1,14 +1,28 @@
 /* FOGLIO DI STILE */
+
+/* GENERALI----------------------------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.flexbox {
-  display: flex;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
+li {
+  text-decoration: none;
+}
+
+
+
+
+/* NAVIGATORE ----------------------------------------- */
 nav {
   position: fixed;
   left:0;
@@ -16,16 +30,92 @@ nav {
   height: calc(100vh - 90px);
   width: 230px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#boxmusica {
-  width: calc(100vw - 230px);
-  height: calc(100vh - 90px);
-  margin-left: 230px;
-  background-color: #253143;
-  overflow: auto;
+#logo {
+  height: 90px;
+  width:230px;
 }
 
+#logo img {
+  width: 133px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+nav li img {
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+}
+
+nav li h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 13px;
+
+}
+
+nav ul li{
+  height: 35px;
+  padding-left: 17px;
+  display: flex;
+  align-items: center;
+}
+
+#playlist {
+  padding: 20px;
+}
+
+#playlist h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#creaplaylist {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#creaplaylist h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#creaplaylist div {
+  height: 37px;
+  width: 37px;
+  background: grey;
+  font-size: 30px;
+  line-height: 37px;
+  color: black;
+  text-align: center;
+  margin-right: 5px;
+}
+
+#playlist li {
+  padding-left: 0;
+  font-size: 13px;
+}
+
+#undernav {
+  padding: 0 20px;
+}
+
+#undernav .sopra {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+#undernav .sotto {
+  margin-top: 20px;
+}
+/* BOX TRASPARENTE ------------------------------------------ */
 #transparent {
   position: fixed;
   top: 0;
@@ -35,11 +125,17 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.debuggone {
-  width: 200px;
-  height: 200px;
-  margin: 50px;
-  background-color: red;
+
+
+
+
+/* BOXMUSICA ------------------------------------------------- */
+#boxmusica {
+  width: calc(100vw - 230px);
+  height: calc(100vh - 90px);
+  margin-left: 230px;
+  background-color: #253143;
+  overflow: auto;
 }
 
 
@@ -47,6 +143,8 @@ nav {
 
 
 
+
+/* PLAYER MUSICALE ----------------------------------------------- */
 #player {
   width: 100vw;
   height: 90px;
