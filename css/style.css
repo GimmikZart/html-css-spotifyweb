@@ -19,6 +19,15 @@ li {
   text-decoration: none;
 }
 
+.tocenter {
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-start;
+
+}
 
 
 
@@ -123,6 +132,17 @@ nav ul li{
   width: calc(100vw - 230px);
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+#transparent h3{
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 12px;
 }
 
 
@@ -134,8 +154,70 @@ nav ul li{
   width: calc(100vw - 230px);
   height: calc(100vh - 90px);
   margin-left: 230px;
-  background-color: #253143;
+  background-color: #141922;
   overflow: auto;
+}
+
+#boxmusica ul{
+
+  margin-top: 100px;
+
+}
+
+#boxmusica ul li {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+
+.flexboxspacebetween div {
+  width: 50px;
+  height: 70px;
+  background-color: red;
+}
+
+.flexbox div {
+  width: calc(100% / 6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flexbox div img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.musicsection div h3{
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+.musicsection div h4 {
+  margin-left: 40px;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #62666b;
+}
+
+.musicsection div h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.musicsection div h6 {
+  font-size: 12px;
+  color: #62666b;
+}
+
+.rounded {
+  border-radius: 100%;
 }
 
 
@@ -151,4 +233,27 @@ nav ul li{
   position: fixed;
   bottom: 0;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+#player .sinistra {
+  /* DEBUG:  */
+  width: 300px;
+  height: 100%;
+  background-color: green;
+}
+
+#player .centro{
+  /* DEBUG:  */
+  width: 700px;
+  height: 100%;
+  background-color: green;
+}
+
+#player .destra {
+  /* DEBUG:  */
+  width: 300px;
+  height: 100%;
+  background-color: green;
 }
