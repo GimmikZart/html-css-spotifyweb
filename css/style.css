@@ -1,0 +1,56 @@
+/* FOGLIO DI STILE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexbox {
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  left:0;
+  top:0;
+  height: calc(100vh - 90px);
+  width: 230px;
+  background-color: black;
+}
+
+#boxmusica {
+  width: calc(100vw - 230px);
+  height: calc(100vh - 90px);
+  margin-left: 230px;
+  background-color: #253143;
+  overflow: auto;
+}
+
+#transparent {
+  position: fixed;
+  top: 0;
+  margin-left: 230px;
+  width: calc(100vw - 230px);
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.debuggone {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: red;
+}
+
+
+
+
+
+
+#player {
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  background-color: #282828;
+}
