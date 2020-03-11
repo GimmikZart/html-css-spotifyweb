@@ -23,10 +23,13 @@ li {
   text-align: center;
 }
 
+.toright {
+  text-align: right;
+}
+
 .flexbox {
   display: flex;
   justify-content: flex-start;
-
 }
 
 
@@ -76,6 +79,14 @@ nav ul li{
   align-items: center;
 }
 
+nav ul li h3 {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+nav ul li:nth-child(1) h3 {
+  color: white;
+}
+
 #playlist {
   padding: 20px;
 }
@@ -94,6 +105,7 @@ nav ul li{
 #creaplaylist h3 {
   font-size: 15px;
   font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #creaplaylist div {
@@ -110,6 +122,7 @@ nav ul li{
 #playlist li {
   padding-left: 0;
   font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #undernav {
@@ -118,11 +131,37 @@ nav ul li{
 
 #undernav .sopra {
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-#undernav .sotto {
-  margin-top: 20px;
+#undernav .sotto span {
+  margin: 15px 0 7px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#undernav .sopra h5 {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#undernav .sopra img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+#undernav .sotto img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background: grey;
+  border-radius: 50%;
 }
 /* BOX TRASPARENTE ------------------------------------------ */
 #transparent {
@@ -168,7 +207,10 @@ nav ul li{
   display: inline-block;
   padding: 5px;
   margin: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
 }
+
 
 .flexboxspacebetween div {
   width: 50px;
@@ -176,7 +218,7 @@ nav ul li{
   background-color: red;
 }
 
-.flexbox div {
+.musicsection .flexbox div {
   width: calc(100% / 6);
   padding: 20px;
   display: flex;
@@ -235,25 +277,116 @@ nav ul li{
   background-color: #282828;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
+/* SINISTRA--------- */
 #player .sinistra {
-  /* DEBUG:  */
-  width: 300px;
+  width: 230px;
   height: 100%;
-  background-color: green;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+#player .sinistra h6,
+#player .sinistra i
+ {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#player .sinistra img {
+  width: 42px;
+  height: 42px;
+}
+
+.sinistra .flexbox {
+  align-items: center;
+}
+
+#minibox {
+  width: 70%;
+  padding-left: 10px;
+}
+
+#player i {
+  margin-right: 15px;
+}
+
+
+
+/* CENTRO ----------- */
 #player .centro{
   /* DEBUG:  */
-  width: 700px;
+  width: 1024px;
   height: 100%;
-  background-color: green;
 }
 
+#player .centro .sopra {
+  width: 100%;
+  height: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sopra i {
+  margin: 0 10px;
+}
+
+.sopra i:nth-child(3) {
+  font-size: 30px;
+}
+
+#player .centro .sotto {
+  width: 100%;
+  height: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sotto span {
+  font-size: 12px;
+}
+
+#playerbar {
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+#playerbar div {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+/* DESTRA------------- */
 #player .destra {
   /* DEBUG:  */
-  width: 300px;
+  width: 210px;
   height: 100%;
-  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+#volumebar{
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+#volumebar div {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.destra i {
+  font-size: 13px;
 }

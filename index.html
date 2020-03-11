@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/96b15bae54.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Spotify web</title>
   </head>
   <body>
@@ -55,10 +57,10 @@
 
         <div id="undernav">
           <div class="sopra">
-            <h5>Installa app</h5>
+            <h5> <img src="img/download.svg" alt="">Installa app</h5>
           </div>
           <div class="sotto">
-            <span>Jhon Doe</span>
+            <span><img src="img/profile.svg" alt="">  Jhon Doe</span>
           </div>
         </div>
       </nav>
@@ -78,12 +80,12 @@
           <!-- LISTA GENERI ------------------>
           <div>
             <ul class="tocenter">
+              <li>IN EVIDENZA</li>
               <li>PODCAST</li>
-              <li>PODCAST</li>
-              <li>PODCAST</li>
-              <li>PODCAST</li>
-              <li>PODCAST</li>
-              <li>PODCAST</li>
+              <li>CLASSIFICHE</li>
+              <li>GENERI E MOOD</li>
+              <li>NUOVE USCITE</li>
+              <li>SCOPRI</li>
             </ul>
           </div>
           <!-- RECENTLY PLAYED --------------->
@@ -190,12 +192,52 @@
     <section id="player">
 
       <div class="sinistra">
+        <div class="flexbox">
+          <img src="img/sinister.jpeg" alt="sinister">
+          <div id="minibox">
+            <h5>Sinister</h5>
+            <h6>Brano Nome</h6>
+          </div>
+        </div>
+        <div>
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+
+
       </div>
 
       <div class="centro">
+
+        <div class="sopra">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo"></i>
+        </div>
+
+        <div class="sotto">
+          <span>0:25</span>
+
+          <div id="playerbar">
+            <div>
+            </div>
+          </div>
+
+          <span>4:35</span>
+        </div>
+
       </div>
 
       <div class="destra">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div id="volumebar">
+          <div>
+          </div>
+        </div>
       </div>
 
     </section>
