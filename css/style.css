@@ -52,11 +52,17 @@ nav {
   width:230px;
 }
 
-#logo img {
+#logo img:nth-child(2) {
   width: 133px;
   height: auto;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+#logo img:nth-child(1) {
+  display: none;
+  width: 28px;
+  height: 28px;
 }
 
 nav li img {
@@ -89,6 +95,7 @@ nav ul li:nth-child(1) h3 {
 
 #playlist {
   padding: 20px;
+  overflow:auto;
 }
 
 #playlist h2 {
@@ -130,20 +137,24 @@ nav ul li:nth-child(1) h3 {
 }
 
 #undernav .sopra {
+  display: flex;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-#undernav .sotto span {
-  margin: 15px 0 7px 0;
+#undernav .sotto {
   display: flex;
   align-items: center;
+}
+
+#undernav .sotto span {
+  margin: 15px 0 7px 0;
   font-size: 14px;
   font-weight: bold;
 }
 
 #undernav .sopra h5 {
-  display: flex;
   align-items: center;
   font-size: 13px;
   font-weight: 300;
@@ -197,6 +208,21 @@ nav ul li:nth-child(1) h3 {
   overflow: auto;
 }
 
+.items li.active {
+  position: relative;
+}
+
+.items li.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: greenyellow;
+}
+
 #boxmusica ul{
 
   margin-top: 100px;
@@ -212,28 +238,42 @@ nav ul li:nth-child(1) h3 {
 }
 
 
-.flexboxspacebetween div {
-  width: 50px;
-  height: 70px;
-  background-color: red;
+#recentplay,
+#creatoper,
+#artistipopolari {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.musicsection .flexbox div {
-  width: calc(100% / 6);
-  padding: 20px;
+
+
+#recentplay div,
+#creatoper div,
+#artistipopolari div{
+  flex-basis:calc(100% / 6);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
 }
 
-.flexbox div img {
+
+#recentplay div img,
+#creatoper div img,
+#artistipopolari div img {
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 90%;
+  padding: 0 5px;
+  min-width: 150px;
+  height: auto;
+}
+
+#recentplay div {
+  flex-shrink: 1;
 }
 
 .musicsection div h3{
+  margin-top: 50px;
   margin-left: 40px;
   font-size: 24px;
 }
@@ -317,7 +357,6 @@ nav ul li:nth-child(1) h3 {
 
 /* CENTRO ----------- */
 #player .centro{
-  /* DEBUG:  */
   width: 1024px;
   height: 100%;
 }
@@ -378,6 +417,7 @@ nav ul li:nth-child(1) h3 {
   height: 4px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+  min-width: 50px;
 }
 
 #volumebar div {
@@ -389,4 +429,83 @@ nav ul li:nth-child(1) h3 {
 
 .destra i {
   font-size: 13px;
+}
+
+
+/* MEDIA QUERY ---------------- */
+
+@media screen and (max-width:600px) {
+  nav {
+    width: 50px;
+  }
+
+  #logo img:nth-child(1) {
+    display:block;
+    width: 28px;
+    height: 28px;
+
+  }
+
+  #transparent {
+    width: calc(100vw - 50px);
+    margin-left: 50px;
+  }
+
+  #boxmusica {
+    width: calc(100vw - 50px);
+    margin-left: 50px;
+  }
+
+  #logo img:nth-child(2) {
+    display: none;
+  }
+
+  #logo {
+    height: 28px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 10px 0;
+  }
+
+  nav ul li {
+    padding:0;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li h3,
+  #playlist {
+    display: none;
+  }
+
+  #undernav h5,
+  #undernav span {
+    display: none;
+  }
+
+  #undernav {
+    padding:0;
+  }
+
+  #undernav .sopra {
+    border: none;
+  }
+
+  #undernav .sotto {
+    margin-bottom: 10px;
+  }
+
+  #undernav .sopra img,
+  #undernav .sotto img  {
+    margin: 0  auto;
+    border: none;
+  }
+
+
+
+
+
+
 }
