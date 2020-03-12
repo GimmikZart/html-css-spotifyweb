@@ -16,8 +16,15 @@ body {
 }
 
 li {
-  text-decoration: none;
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+  color: #63605c;
+}
+
+
 
 .tocenter {
   text-align: center;
@@ -71,16 +78,19 @@ nav li img {
   margin-right: 5px;
 }
 
+#uppernav {
+  padding-left: 20px;
+}
+
 nav li h3 {
   color: white;
   font-weight: 300;
   font-size: 13px;
-
 }
 
-nav ul li{
+nav ul li a{
   height: 35px;
-  padding-left: 17px;
+  /* padding-left: 17px; */
   display: flex;
   align-items: center;
 }
