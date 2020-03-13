@@ -50,6 +50,8 @@ a:hover {
 
 
 /* NAVIGATORE ----------------------------------------- */
+
+
 nav {
   position: fixed;
   left:0;
@@ -59,7 +61,6 @@ nav {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 #logo {
@@ -121,9 +122,25 @@ nav ul li:nth-child(1) h3 {
   color: white;
 }
 
+#scrollbar {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+}
+
 #playlist {
   padding: 20px;
-  overflow:auto;
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+
+#playlist ul {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
 #playlist h2 {
@@ -301,6 +318,7 @@ nav ul li:nth-child(1) h3 {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  padding: 0 5px;
 }
 
 
@@ -573,8 +591,13 @@ nav ul li:nth-child(1) h3 {
     display:block;
     width: 28px;
     height: 28px;
-
   }
+
+  #uppernav{
+    padding: 0;
+  }
+
+
 
   #transparent {
     width: calc(100vw - 50px);
