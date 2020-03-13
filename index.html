@@ -21,22 +21,22 @@
           <!-- HOME-CERCA-LIBRERIA ---->
           <ul id="uppernav">
             <li>
+              <img src="img/home.svg" alt="home">
               <a href="#">
-                <img src="img/home.svg" alt="home">
                 <h3>Home</h3>
               </a>
             </li>
 
             <li>
+              <img src="img/search.svg" alt="search">
               <a href="#">
-                <img src="img/search.svg" alt="search">
                 <h3>Cerca</h3>
               </a>
             </li>
 
             <li>
+              <img src="img/libreria.svg" alt="libreria">
               <a href="#">
-                <img src="img/libreria.svg" alt="libreria">
                 <h3>La tua libreria</h3>
               </a>
             </li>
@@ -83,7 +83,11 @@
         <div id="undernav">
           <div class="sopra">
             <img src="img/download.svg" alt="">
-            <h5>Installa app</h5>
+            <a href="#">
+              <h5>
+                Installa app
+              </h5>
+            </a>
           </div>
           <div class="sotto">
             <img src="img/profile.svg" alt="">
@@ -97,7 +101,9 @@
         <!-- BLOCCO TRASPARENTE IN ALTO -->
         <section id="transparent">
           <div>
-            <h3>EFFETTUA L'UPGRADE</h3>
+            <a href="#">
+              <h3>EFFETTUA L'UPGRADE</h3>
+            </a>
           </div>
 
         </section>
@@ -147,38 +153,68 @@
             </div>
             <!-- LISTA PLAYLIST -->
             <div id="recentplay">
-              <div>
-                <img src="img/metal_lifting.jpg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Heavy Metal</h5>
                 <h6>Subtitle</h6>
               </div>
 
-              <div>
-                <img src="img/stranger.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/stranger.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
                 <h6>Kyle Dixon & Michael Stein</h6>
               </div>
 
-              <div>
-                <img src="img/aquietplace.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/aquietplace.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>A quiet place</h5>
                 <h6>Subtitle</h6>
               </div>
 
-              <div>
-                <img src="img/split.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/split.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Split</h5>
                 <h6>Subtitle</h6>
               </div>
 
-              <div>
-                <img src="img/cure.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/cure.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>A cure for wellness</h5>
                 <h6>Subtitle</h6>
               </div>
 
-              <div>
-                <img src="img/sinister.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/sinister.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Sinister</h5>
                 <h6>Subtitle</h6>
               </div>
@@ -195,13 +231,24 @@
             <!-- LISTA PLAYLIST -->
             <div id="creatoper">
 
-              <div>
-                <img src="img/radar.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/radar.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Release Radar</h5>
               </div>
 
-              <div>
-                <img src="img/mixdaily.jpeg" alt="">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/mixdaily.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+
                 <h5>Daily Mix 1</h5>
               </div>
 
@@ -218,13 +265,23 @@
             <!-- LISTA PLAYLIST -->
             <div id="artistipopolari">
 
-              <div>
-                <img src="img/youg.jpeg" alt="" class="rounded">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/youg.jpeg" alt="" class="rounded">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Lana del Rey</h5>
               </div>
 
-              <div>
-                <img src="img/einaudi.jpeg" alt="" class="rounded">
+              <div class="scheda">
+                <div class="coverimg">
+                  <img src="img/einaudi.jpeg" alt="" class="rounded">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <h5>Ludovico Einaudi</h5>
               </div>
             </div>
@@ -275,17 +332,21 @@
         <div class="sopra">
           <a href="#"> <i class="fas fa-random"></i></a>
           <a href="#"> <i class="fas fa-step-backward"></i></a>
-          <a href="#"> <i class="far fa-play-circle"></i></a>
+          <a href="#" id="tastoplay"> <i class="far fa-play-circle"></i></a>
           <a href="#"> <i class="fas fa-step-forward"></i></a>
-          <a href="#"><i class="fas fa-redo"></i></a> 
+          <a href="#"><i class="fas fa-redo"></i></a>
         </div>
 
         <div class="sotto">
           <span>0:25</span>
 
-          <div id="playerbar">
-            <div>
-            </div>
+          <div class="playerbar">
+            <a href="#">
+              <div class="barracaricamento">
+                <div class="pallinoplayer">
+                </div>
+              </div>
+            </a>
           </div>
 
           <span>4:35</span>
@@ -297,9 +358,13 @@
         <i class="fas fa-list"></i>
         <i class="fas fa-desktop"></i>
         <i class="fas fa-volume-up"></i>
-        <div id="volumebar">
-          <div>
-          </div>
+        <div class="playerbar">
+          <a href="#">
+            <div class="barracaricamento">
+              <div class="pallinoplayer">
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
