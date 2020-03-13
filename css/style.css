@@ -24,6 +24,14 @@ a {
   color: #63605c;
 }
 
+a:hover , a h3:hover {
+  color: white;
+}
+
+#creaplaylist:hover {
+  color: white;
+}
+
 
 
 .tocenter {
@@ -113,10 +121,18 @@ nav ul li:nth-child(1) h3 {
   margin-bottom: 10px;
 }
 
-#creaplaylist {
+#creaplaylist a {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+#creaplaylist a div:hover {
+  background-color: white;
+}
+
+#creaplaylist a h3:hover  {
+  color: white;
 }
 
 #creaplaylist h3 {
@@ -339,11 +355,31 @@ nav ul li:nth-child(1) h3 {
   justify-content: space-between;
 }
 
+#player .sinistra h5 a {
+  color: white;
+}
+
+#player .sinistra h5:hover {
+  color: white;
+  text-decoration:underline;
+}
+
+
 #player .sinistra h6,
 #player .sinistra i
  {
   color: rgba(255, 255, 255, 0.4);
 }
+
+#player .sinistra h6 a:hover {
+  text-decoration: underline;
+}
+
+#player .sinistra a i:hover {
+  color: white;
+}
+
+
 
 #player .sinistra img {
   width: 42px;
@@ -379,11 +415,11 @@ nav ul li:nth-child(1) h3 {
   justify-content: center;
 }
 
-.sopra i {
+.sopra a i {
   margin: 0 10px;
 }
 
-.sopra i:nth-child(3) {
+.sopra a:nth-child(3) i {
   font-size: 30px;
 }
 
